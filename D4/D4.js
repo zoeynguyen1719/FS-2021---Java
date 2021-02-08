@@ -36,7 +36,11 @@ Write a function "crazyDiff" that computes the absolute difference between a giv
 It should return triple their absolute difference if the given number is greater than 19.
 */
 // const crazyDiff = function(number) {
-//     return absolute(number) * 19
+//     if (number > 19) {
+//         return Math.abs(number) * 3;
+//     } else () {
+//         return number;
+//     }  
 // };
 
 /* EXERCISE 4
@@ -58,7 +62,7 @@ It should add the word "Strive" in front of the given string, but if the given s
 
 /* WRITE YOUR CODE HERE */
 // const strivify = function(string) {
-//     if (string == "Strive") {
+//     if (string === "Strive") {
 //         return string;
 //     } else {
 //         console.log("Strive" + string);
@@ -97,6 +101,10 @@ Write a function "reverseString" to programmatically reverse a given string (es.
 //     return new String(in);
 // }  
 
+// const reverseString = function(stringinput) {
+//     return.stringinput.split("").reserve().join("");
+// }
+
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
@@ -118,11 +126,11 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 */
 
 /* WRITE YOUR CODE HERE */
-const giveMeRandom = function(x) {
-    System.out.println("please enter a integer 'n' ");
-    int x= input.nextInt();
-    int[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-}
+// const giveMeRandom = function(x) {
+//     System.out.println("please enter a integer 'n' ");
+//     int x= input.nextInt();
+//     int[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+// }
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
 */
