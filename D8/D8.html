@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/905899457122635.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210210%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210210T115009Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D8.html&X-Amz-Signature=addb11c7ad5add1d15303a50a40ae14c802a00c2061de9e6f9d48a006642f841 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- EXERCISE 1:
+    Specify the title, the charset (UTF-8) and the viewport of the page.
+    -->
+    <head>
+      <meta charset="UTF-8">
+      <meta name="title" content="Welcome to your personal Task List!">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+      
+      /* EXERCISE 2:  
+       Create a CSS class for the task list with a diverse background
+       Create a CSS class for the task list item with a border, a bold text and a bigger font size
+       Style every button of the page to be bigger
+    */
+    </style>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.994.0" data-gr-ext-installed="">
+    <h1>Welcome to your personal Task List!</h1>
+    <br>
+
+    <span>You can add any task you like by writing it in the specified field and
+      then press "Add new task"</span><br><br>
+
+    <input type="text" id="newTask">
+    <input type="button" value="Add new Task" onclick="addNewTask()">
+    <div class="task1"></div> {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      border: 2px solid #4CAF50; /* Green */
+      text-decoration: bold;
+      font-size: 16px;
+    }
+
+    <div class="task2"></div> {
+      background-color: red
+      color: white;
+      border: 2px solid red
+      text-decoration: bold;
+      font-size: 16px;
+    }
+
+    <!-- EXERCISE 3
+        Create a button "Remove Last Task" to trigger the method "removeLast"
+        -->
+        <button onclick="removeLast()">Remove Last Task</button>
+    <!-- EXERCISE 4
+        Create a button "Remove First Task" to trigger the method "removeFirst"
+        -->
+        <button onclick="removeFirst()">Remove First Task</button>
+    <ul id="myTaskList"></ul>
+
+    <hr>
+
+    <input type="color" placeholder="Color" id="colorPicker">
+    <input type="button" value="Change task background" onclick="changeTaskBackgroundColor()">
+
+    <hr>
+
+    <input type="button" value="Sort" onclick="bubblesort()">
+
+    <script>
+      /* EXERCISE 5: 
+          Add a new task to the list.
+          Suggestion:
+          - Use document.getElementById to get the UL item and the input text
+          - Use the document.createElement to create the new List Item
+          - Append the child to the UL
+      */
+      function addNewTaskToList() {
+        let newTask = document.getElementById('myUl'); console.log(newTask.value);
+        let newList = document.createElement("New List");
+        newList.appendChild(document.createTextNode("New Item"));
+        newTask.appendChild(newList)
+      }
+      /* EXERCISE 6: 
+          Create a method "removeLast" which removes the last item from the task list
+      */
+      var list = document.getElementById("myTaskList");
+      function removeLast() {
+        list.removeChild(list.childNodes[-1]);  
+        console.log(myTaskList);
+      }
+      /* EXERCISE 7: 
+          Create a method "removeFirst" which removes the first item from the task list
+      */
+      var list = document.getElementById("myTaskList");
+      function removeFirst() {
+        list.removeChild(list.childNodes[0]);  
+        console.log(myTaskList);
+      }
+      /* EXERCISE 8: 
+          Create a method "getTasksAsArray" which returns (and print to the console) an array containing the tasks as string
+      */
+      var list = document.getElementById("myTaskList");
+      function getTasksAsArray() {
+        console.log(myTaskList.toString());
+      }
+      /* EXERCISE 9:
+          Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
+          onchange event listener ad applies it as background to every list item
+      */
+      function changeTaskBackgroundColor() {
+        var color = document.getElementById("myColor").value;
+        var i;
+        for (i = 0; i < color.length; i++) {
+          color(i);
+        }
+      }
+      /* EXTRA */
+
+      /* EXERCISE 10: 
+          Create a method "bubbleSort()" which sort the task list alphabetically using the bubble sort algorithm
+      
+          Use your spare time to beautify your task list with CSS.
+
+          Suggestion:
+          - Break the code into many function for semplicity 
+          - Reuse the functions previously created
+      */
+    function bubbleSort() {
+      var list, i, 
+
+    }
+    </script>
+  
+
+<script>mendeleyWebImporter = {
+  downloadPdfs(t) { return this._call('downloadPdfs', [t]); },
+  open() { return this._call('open', []); },
+  _call(methodName, methodArgs) {
+    window.postMessage({ token: '0.37092484879008425', methodName, methodArgs }, 'https://s3.eu-west-1.amazonaws.com');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data)) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script></body></html>

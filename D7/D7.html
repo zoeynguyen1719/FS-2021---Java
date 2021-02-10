@@ -7,7 +7,7 @@
       */
 
       function changeTitle(newTitle){
-        let newTitle = document.getElementById("h1").title = "Something Else";
+        let newTitle = document.querySelector("h1").innerText = "Something Else";
         console.log(newTitle);
       }
 
@@ -19,7 +19,7 @@
         let x = document.getElementsByClassName("myHeading");
         let i;
         for (i = 0; i < x.length; i++) {
-          x[i].title = "New Tittle"}
+          x[i].innerText = "New Tittle"}
         }
       }
       /* EXERCISE 3
@@ -27,11 +27,10 @@
       */
 
       function changePcontent(){
-        let x = document.p.children.text;
+        let x = document.querySelectorAll('div p')
         let i;
         for (i = 0; i < x.length; i++) {
-          x[i].p.t
-        }
+          x[i].innerText= 'some text'        }
       }
 
       /* EXERCISE 4
@@ -39,7 +38,11 @@
       */
 
       function changeUrls() {
-
+        let changeUrls = document.getElementById("myAnchor").href;
+        let i;
+        for (i = 0; i < changeUrls.length; i++) {
+          changeUrls[i].
+        }
       }
 
        /* EXERCISE 5
@@ -100,9 +103,8 @@
       /* EXERCISE 12
       Create a new welcome alert message when the page successfully loads.
       */
-
-      window.onload = function(){
-
+      
+      window.onload = function() { console.log('Welcome!') }
       }
 
       /* EXERCISE 13
