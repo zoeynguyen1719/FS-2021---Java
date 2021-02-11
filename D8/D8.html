@@ -27,21 +27,7 @@
 
     <input type="text" id="newTask">
     <input type="button" value="Add new Task" onclick="addNewTask()">
-    <div class="task1"></div> {
-      background-color: #4CAF50; /* Green */
-      color: white;
-      border: 2px solid #4CAF50; /* Green */
-      text-decoration: bold;
-      font-size: 16px;
-    }
 
-    <div class="task2"></div> {
-      background-color: red
-      color: white;
-      border: 2px solid red
-      text-decoration: bold;
-      font-size: 16px;
-    }
 
     <!-- EXERCISE 3
         Create a button "Remove Last Task" to trigger the method "removeLast"
@@ -70,7 +56,7 @@
           - Use the document.createElement to create the new List Item
           - Append the child to the UL
       */
-      function addNewTaskToList() {
+      function addNewTask() {
         let newTask = document.getElementById('myUl'); console.log(newTask.value);
         let newList = document.createElement("New List");
         newList.appendChild(document.createTextNode("New Item"));
@@ -104,7 +90,7 @@
           onchange event listener ad applies it as background to every list item
       */
       function changeTaskBackgroundColor() {
-        var color = document.getElementById("myColor").value;
+        var color = document.getElementById("colorPicker").value;
         var i;
         for (i = 0; i < color.length; i++) {
           color(i);

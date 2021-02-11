@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/183741164699216.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210211%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210211T140144Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D9.html&X-Amz-Signature=8afd0f9634a512a32e45e1488b991b388b6ef313fa275d830e8070e133b5e553 -->
+<html><!--
+        BINGO CHALLENGE!!!
+        Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
+        Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
+
+        EXTRA: 
+        - Take ALWAYS a new number (avoid randoming 10 3 times for example)
+        - Create a USER BOARD with random 24 numbers that highlights as the main board does
+        - Let the user choose HOW MANY user boards he's willing to play with and create them.
+    --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
+  <body data-new-gr-c-s-check-loaded="14.995.0" data-gr-ext-installed="">
+
+<script>mendeleyWebImporter = {
+  downloadPdfs(t) { return this._call('downloadPdfs', [t]); },
+  open() { return this._call('open', []); },
+  _call(methodName, methodArgs) {
+    window.postMessage({ token: '0.7387890437736864', methodName, methodArgs }, 'https://s3.eu-west-1.amazonaws.com');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data)) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+
+
+
+
+};
+let bingo = [];
+const getRandom = function(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+<button onclick="document.getElementById('demo').innerHTML = getRandom(0,79)">Randomize Numbers</button>
+<p id="demo"></p>
+</script>
+</body>
+</html>
