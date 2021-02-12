@@ -9,34 +9,86 @@
         - Take ALWAYS a new number (avoid randoming 10 3 times for example)
         - Create a USER BOARD with random 24 numbers that highlights as the main board does
         - Let the user choose HOW MANY user boards he's willing to play with and create them.
-    --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
+    -->
+  <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <body data-new-gr-c-s-check-loaded="14.995.0" data-gr-ext-installed="">
+    <style>
+      body {
+        background-color: #f8f8f8;
+        font-family: "Poppins", sans-serif;
+        color: #1b1b1b;
+        max-width: 768px;
+        margin: 0 auto;
+        font-size: 18px;
+      }
+      input:focus {
+        background-color: white;
+        color: black;
+      }
+      input::placeholder {
+        color: white;
+      }
+      input:focus::placeholder {
+        color: black;
+      }
 
-<script>mendeleyWebImporter = {
-  downloadPdfs(t) { return this._call('downloadPdfs', [t]); },
-  open() { return this._call('open', []); },
-  _call(methodName, methodArgs) {
-    window.postMessage({ token: '0.7387890437736864', methodName, methodArgs }, 'https://s3.eu-west-1.amazonaws.com');
-    return new Promise(resolve => {
-      const listener = window.addEventListener('message', event => {
-        const data = event.data;
-        if (typeof data !== 'object' || !('result' in data)) return;
-        window.removeEventListener('message', listener);
-        resolve(data.result);
-      });
-    });
-  }
+      .selected {
+        border: 1px solid #00ff84;
+        border-radius: 6px;
+      }
 
+      #bingo {
+        display: none;
+      }
 
+      ul {
+        padding: 0;
+        /* list-style-type: none; */
+      }
 
-
-};
-let bingo = [];
-const getRandom = function(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-<button onclick="document.getElementById('demo').innerHTML = getRandom(0,79)">Randomize Numbers</button>
-<p id="demo"></p>
-</script>
-</body>
+      li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .withEvent span {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 16px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #00ff84;
+      }
+    </style>
+  </head> 
+  <body>
+    <h1>Bingo Game</h1>
+    <div id="bingo"></div>
+    <h2>Random Numbers</h2>
+    <div id="randomNumber"></div>
+    <script>mendeleyWebImporter = {
+      downloadPdfs(t) { return this._call('downloadPdfs', [t]); },
+      open() { return this._call('open', []); },
+      _call(methodName, methodArgs) {
+        window.postMessage({ token: '0.7387890437736864', methodName, methodArgs }, 'https://s3.eu-west-1.amazonaws.com');
+        return new Promise(resolve => {
+          const listener = window.addEventListener('message', event => {
+            const data = event.data;
+            if (typeof data !== 'object' || !('result' in data)) return;
+            window.removeEventListener('message', listener);
+            resolve(data.result);
+          });
+        });
+      }
+    };
+    let bingo = [];
+    const getRandom = function(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+    <button onclick="document.getElementById('demo').innerHTML = getRandom(0,79)">Randomize Numbers</button>
+    <p id="demo"></p>
+    </script>
+  </body>
 </html>

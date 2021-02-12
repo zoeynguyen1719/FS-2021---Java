@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0446)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/284520879345620.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210212%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210212T083147Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27M1.D10%252050ex.html&X-Amz-Signature=a2df97ca91d16297a88562db506b5c3bc232a0d203c6e2aea6d706243bc4a871 -->
+<html lang="en"><!--
+
+        HTML EXERCISES
+
+        1) Create a title for the page
+        2) Create a heading
+        3) Create an ordered list
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )
+
+        JS EXERCISES
+
+        21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
+        22) Create an object with properties such name, surname, email
+        23) Delete Email from the previously created object
+        24) Create an array with 10 strings in it
+        25) Print in the console every string in the previous array
+        26) Create an array with 100 random numbers in it
+        27) Wrote a function to get the MAX and the MIN from the previously created array
+        28) Create an array of arrays, in which every array has 10 random numbers
+        29) Create a function that gets 2 arrays and returns the longest one
+        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+        DOM 
+
+        31) Get element with ID "container" from the page
+        32) Get every "td" from the page
+        33) Create a cycle that prints the text inside every td of the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add the class "test" to each row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a UL
+        40) Write a function to empty a list
+
+        EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change a single TD background color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over it
+        49) Write a function to add a table with 4 rows and 3 columns programmatically
+        50) Write a function to remove the table from the page
+    -->
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sushi Restaurant</title> <!--1) Create a title for the page-->
+    </head>
+    <style>
+       body {
+        background-color: #f8f8f8;
+        font-family: "Poppins", sans-serif;
+        color: #1b1b1b;
+        max-width: 768px;
+        margin: 0 auto;
+        font-size: 18px;
+      }
+      #font {
+        font-size: 18px;
+        font-weight: bolder;
+      }
+      #content {
+        max-width: 500px;
+        margin: auto;
+      }
+      #visibility {
+        visibility: hidden;
+      }
+      table, th {
+        border-radius: 15px 50px 30px 5px;
+        border: 1px solid rgb(175, 164, 164);
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+        background: #c1ccb3;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      }
+      td {
+        border: 1px solid rgb(65, 156, 96);
+      }
+      tr {
+      border-style: dotted; 
+      border-color: red;
+      }
+      h1 {
+        text-align: center;
+      }
+      a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    p {
+      margin: 35px;
+    }
+
+    </style>
+    <body data-new-gr-c-s-check-loaded="14.995.0" data-gr-ext-installed="">
+      <h1>Menu</h1> <!--2) Create a heading-->
+      <div id="html"></div>
+      <ol> <!--3) Create an ordered list-->
+        <li>Avocado Maki</li>
+        <li>Tamagoyaki</li>
+        <li>Tuna Maki</li>
+      </ol>
+<!--
+4) Create a table with 5 columns and 4 rows
+5) Add an image to each second cell of every row
+6) Add a anchor link for every image
+7) Merge together 2 table cells
+-->
+
+<table style="width:100%">
+  <tr>
+    <th>Sushi Types</th>
+    <th>Image </th>
+    <th colspan="2">Price </th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Avocado Maki</td>
+    <td>
+      <a href="default.asp"><img src="https://images.unsplash.com/photo-1611762687807-7cdd09aef422?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="unsplash.com" style="width:100px;height:100px;"></a></td>
+    <td colspan="2">$3</td>
+    <td>6 stucks</td>
+  </tr>
+  <tr>
+    <td>Tamagoyaki</td>
+    <td>
+      <a href="default.asp"><img src= "https://images.unsplash.com/photo-1473269712320-f24ce5aa6e5d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80" alt="unsplash.com" style="width:100px;height:100px;"></a></td>
+    <td>$6</td>
+    <td>8 stucks</td>
+  </tr>
+  <tr>
+    <td>Salmon Maki</td>
+    <td>
+      <a href="default.asp"><img src="https://images.unsplash.com/photo-1599679837916-908ba3df9e23?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1036&q=80" alt="unsplash.com" style="width:100px;height:100px;"></a></td>
+    <td>$10</td>
+    <td>10 stucks</td>
+  </tr>
+</table>
+<!--8) Divide the page using a horizontal line-->
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<!--9) Create a container with a nested paragraph and a nested unordered list -->
+<div class="Nested container">
+  <h1>Ingredients</h1>
+  <p>
+    <h2>Avocado Maki</h2>
+    <ul>-Avocado</ul>
+    <ul>-Seaweed</ul>
+    <ul>-Rice</ul>
+    <h2>Tamagoyaki</h2>
+    <ul>-Egg</ul>
+    <ul>-Seaweed</ul>
+    <ul>-Rice</ul>
+    <h2>Salmon Maki</h2>
+    <ul>-Salmon</ul>
+    <ul>-Seaweed</ul>
+    <ul>-Rice</ul>
+  </p>
+</div>
+<!--10) Create a footer with some information about the page creator -->
+<footer> 
+  <p>Contact: Veggie Sushi Shop</p>
+  <p><a href="mailto:vegg@sushi.com">vegg@sushi.com</a></p>
+</footer>
+<script>mendeleyWebImporter = {
+  downloadPdfs(t) { return this._call('downloadPdfs', [t]); },
+  open() { return this._call('open', []); },
+  _call(methodName, methodArgs) {
+    window.postMessage({ token: '0.07037580637835728', methodName, methodArgs }, 'https://s3.eu-west-1.amazonaws.com');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data)) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script></body></html>
