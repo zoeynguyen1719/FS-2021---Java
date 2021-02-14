@@ -125,7 +125,7 @@
 
     </style>
     <body data-new-gr-c-s-check-loaded="14.995.0" data-gr-ext-installed="">
-      <h1>Menu</h1> <!--2) Create a heading-->
+      <h1 id = "heading">Menu</h1> <!--2) Create a heading-->
       <div id="html"></div>
       <ol> <!--3) Create an ordered list-->
         <li>Avocado Maki</li>
@@ -139,7 +139,7 @@
 7) Merge together 2 table cells
 -->
 
-<table style="width:100%">
+<table id = "table" style="width:100%">
   <tr>
     <th>Sushi Types</th>
     <th>Image </th>
@@ -207,4 +207,32 @@
       });
     });
   }
-};</script></body></html>
+};
+
+var container = document.getElementById("container");
+var tableData = document.createElement("TD");
+var tdElements = document.querySelectorAll("TD");
+for (var i= 0; i < tdElements.length; i++) {
+    console.log(tdElements[i]);
+}
+function changeTittle() {
+  document.getElementById("heading").innerHTML = "New Sushi Shop";
+}
+function newRow() {
+  var table = document.getElementById("table");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+}
+
+function addClassTest() {
+  const tableRow = document.querySelectorAll('tr');
+  for (var j= 0; j < tableRow.length; j++) {
+    tableRow.classList.add('test');
+}
+}
+
+
+</script></body></html>
