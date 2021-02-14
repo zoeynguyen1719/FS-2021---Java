@@ -175,17 +175,23 @@
   <h1>Ingredients</h1>
   <p>
     <h2>Avocado Maki</h2>
-    <ul>-Avocado</ul>
-    <ul>-Seaweed</ul>
-    <ul>-Rice</ul>
+    <ul>
+      <li>-Avocado</li>
+      <li>-Seaweed</li>
+      <li>-Rice</li>
+    </ul>
     <h2>Tamagoyaki</h2>
-    <ul>-Egg</ul>
-    <ul>-Seaweed</ul>
-    <ul>-Rice</ul>
+    <ul>
+      <li>-Egg</li>
+      <li>-Seaweed</li>
+      <li>-Rice</li>
+    </ul>
     <h2>Salmon Maki</h2>
-    <ul>-Salmon</ul>
-    <ul>-Seaweed</ul>
-    <ul>-Rice</ul>
+    <ul>
+      <li>-Salmon</li>
+      <li>-Seaweed</li>
+      <li>-Rice</li>
+    </ul>
   </p>
 </div>
 <!--10) Create a footer with some information about the page creator -->
@@ -233,6 +239,28 @@ function addClassTest() {
     tableRow.classList.add('test');
 }
 }
+function changeBackgroundLink() {
+  var link = document.getElementById("p").querySelectorAll("a[href]");
+  var i;
+  for (i = 0; i < link.length; i++) {
+    link[i].style.backgroundColor = "red";
+  }
+}
+window.onload = function() { 
+    alert('Page loaded');
+}
 
-
+function addNewItemUl() {
+  var ul = document.getElementByTagName("ul");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode("Element 4"));
+  ul.appendChild(li);
+}
+function emptyList() {
+  var ul = document.getElementByTagName("ul");
+  var i;
+  for (i =0, i < ul.length, i++) {
+    ul[i].empty();
+  }
+}
 </script></body></html>
