@@ -16,76 +16,78 @@
     <title>Netflix</title>
   </head>
   <body>
-    <div id="page-wrapper" class="container-fluid">
-      <div class="container">
+    <div id="page-wrapper" class="container ml-4">
+      <div id="nav-wrapper" class="container">
         <nav class="navbar navbar-expand-lg my-3">
-          <img
-            id="logo"
-            class="mr-3"
-            src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_logo.png"
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex" id="navbarNavDropdown">
-            <div class="left">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div id="nav">
+                <nav class="navbar navbar-expand-lg my-3">
+                    <img
+                      id="logo"
+                      class="mr-3"
+                      src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_logo.png"
+                    />
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarNavDropdown"
+                      aria-controls="navbarNavDropdown"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+              <div class="left">
                 <ul class="navbar-nav">
-              
-                <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">TV Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recently Added</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My List</a>
-              </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                  </li>
                 </ul>
-            </div>
-            <div class="right">
-            <ul class="no-bullets row">  
-            <li class="nav-item">
-                <img
-                  id="search-icon"
-                  class="mt-2"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFM0UymE_pOv__JyhctIGLq9XRRmoZx1Rg3Q&usqp=CAU"
-                />
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">KIDS</a>
-              </li>
-              <li class="nav-item">
-                <img
-                  id="notification-icon"
-                  class="mt-2"
-                  src="https://www.materialui.co/materialIcons/social/notifications_white_192x192.png"
-                />
-              </li>
-              <li class="nav-item">
-                <img
-                  id="profile-icon"
-                  class="mt-1"
-                  src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZfW1RUr22fiBWaYExj7CxON4XhbCzdXecA3cogZ0L2umPLeF1G2CRjQOqJ4DsYba55_ydC_mMzPhNI-1lGWzjg.png?r=9fe"
-                  alt=""
-                />
-              </li>
-            </ul>
+              </div>
+              <div class="right">
+                <ul class="no-bullets row">
+                  <li class="nav-item">
+                    <img
+                      id="search-icon"
+                      class="mt-2"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFM0UymE_pOv__JyhctIGLq9XRRmoZx1Rg3Q&usqp=CAU"
+                    />
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">KIDS</a>
+                  </li>
+                  <li class="nav-item">
+                    <img
+                      id="notification-icon"
+                      class="mt-2"
+                      src="https://www.materialui.co/materialIcons/social/notifications_white_192x192.png"
+                    />
+                  </li>
+                  <li class="nav-item">
+                    <a href="settings.html"><img
+                      id="profile-icon"
+                      class="mt-1"
+                      src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZfW1RUr22fiBWaYExj7CxON4XhbCzdXecA3cogZ0L2umPLeF1G2CRjQOqJ4DsYba55_ydC_mMzPhNI-1lGWzjg.png?r=9fe"
+                      alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -105,66 +107,210 @@
           </button>
           <div class="container">
             <div class="dropdown-menu row" aria-labelledby="dropdownMenuButton">
-              <ul class="no-bullets col">
-                <li>Action & Adventure</li>
-                <li>Anime</li>
-                <li>British</li>
-                <li>Comedies</li>
-                <li>Crime</li>
-                <li>Docuseries</li>
-                <li>Dramas</li>
-              </ul>
-              <ul class="no-bullets col">
-                <li>Horror</li>
-                <li>International</li>
-                <li>Italian</li>
-                <li>Kids</li>
-                <li>Mysteries</li>
-                <li>Reality & Talk</li>
-                <li>Romance</li>
-              </ul>
-              <ul class="no-bullets col">
-                <li>Sci-Fi & Fantasy</li>
-                <li>Science & Nature</li>
-                <li>Teen</li>
-                <li>Thriller</li>
-                <li>US</li>
-              </ul>
+              <div id="genres">
+                <ul class="no-bullets">
+                  <li>Action & Adventure</li>
+                  <li>Anime</li>
+                  <li>British</li>
+                  <li>Comedies</li>
+                  <li>Crime</li>
+                  <li>Docuseries</li>
+                  <li>Dramas</li>
+                </ul>
+                <ul class="no-bullets">
+                  <li>Horror</li>
+                  <li>International</li>
+                  <li>Italian</li>
+                  <li>Kids</li>
+                  <li>Mysteries</li>
+                  <li>Reality & Talk</li>
+                  <li>Romance</li>
+                </ul>
+                <ul class="no-bullets">
+                  <li>Sci-Fi & Fantasy</li>
+                  <li>Science & Nature</li>
+                  <li>Teen</li>
+                  <li>Thriller</li>
+                  <li>US</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div><br>
-      <div class="container mx-auto">
-          <h5>Trending</h5>
-          <div id="slider" class="container row">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-          </div><br>
-          <h5>Watch it again</h5>
-          <div id="slider" class="container row">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-          </div><br>
-          <h5>Based on How I Met Your Mother</h5>
-          <div id="slider" class="container row">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-            <img id="item" src="http://placehold.it/210x120">
-          </div><br>
-          
       </div>
-      <footer>THIS IS THE FOOTER</footer>
+      <br />
+      <div class="container mx-auto">
+        <h5>Trending now</h5>
+        <div id="slider" class="container row">
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABavRwYeWMygWEhjzdqKsAxUWdue-g8dgG8Oh_eieRIDCkoyu32OQopyQ43Kx7ezFUifJvxIkqg1S-3YtMBjer9D-xZw.webp?r=801"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://www.purefandom.com/wp-content/uploads/2018/11/dark2.jpg"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://flixchatter.files.wordpress.com/2020/11/netflix-queensgambit.jpg"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe-QUOpI6DcqzMxp7wgi8TCo2nXmjnW6gDnbGhFrWOpPITSADbSqYZRLybsE5nwnPsGlWc6mpJXJVKsM9OgYqIGMOQI.webp?r=37e"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQO417AoaMguF_DtQ1zOivjKkMZEpP5zA1YFG1zwSewxnHSW3UyRVVbIUbhMdVsXnZzFolmiO9x3tteyklzoM_fZ9VA.webp?r=a8a"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe6je1oB6V0brBRq4l3TlXn00R2soAjzU7Waa-x-xl6nYnThCt3S0aBMXnTqQ7ghImxPbIRsZHfk0wK71NyEqc-0ENI.webp?r=7a5"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABc_rdKIMq5XuxJ2wxR211Nu51I0H-T2h9KIo4Gqov8wbjhFNnseNq_Ea2imbi5-xxv4eADmErzDwmSooyjim8-D_g_c.webp?r=816"
+            />
+          </div>
+        </div>
+        <br />
+        <h5>Watch it again</h5>
+        <div id="slider" class="container row">
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://lh3.ggpht.com/X0l4M6yv7AB5-Hryu8yGZdXK0jauqtFw3QCuPiZ1Ktg3EVtjJBLq7ITrEEorfFPfSvYK=w1264"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://starcasm.net/wp-content/uploads/2016/06/Orange_Is_The_New_Black_cast.jpg"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABX8IcmVHw3Nb7bgAFNdS7b_aeehFI5KYuInoiFfrj1ilAQIu50gg3hjTHqGGIhtTXLzgpFxVIVxGNK2_hB__USt-JlU.webp?r=8fd"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfv50J5yrR5Js0TsKd9SfPssvQHynmcMWOLnfFKKkpevAKH3lFJNmzFH1blVfSRm4fAyBNjjAHNqNmE3BIPL0oCok6U.webp?r=580"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRItzLGWEqRojd0SS5lkLN56bRwYGctgeybCwPWq-zs_UwEXKX_4CsXsMlWupAdBB5D7KDN-8RzuCvqzTf5Bvo_HQmI.webp?r=3ad"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZhhv_b4I6eAR3GCi1V_LUjI9ucXeLP85nHBvRwsn0oZ9KHkx1bkArw9E3Tl2cbhW_uegk4dBrwEOBB7i58uV5UZD7ipiIcRa7OUBpTAp-P9CPhnikjhdpT9RJR_.jpg?r=909"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbjHvmGWG0LWxCZTFVzDoDYpKgl1raBwEbTmmUMXD8dqplg7Ly9L9VXDCAnZA4-yyEpdI_5qd5SYaBJDP69fXbWdARC3aW6Qo0s32SefuRmR16ZUyc2LYQjrdki-.jpg?r=1de"
+            />
+          </div>
+        </div>
+        <br />
+        <h5>Based on How I Met Your Mother</h5>
+        <div id="slider" class="container row">
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://www.india.com/wp-content/uploads/2017/08/friends.jpg"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSu8-c935uMXrg25WLtn3GgurMhcP6TAstDNI-7HQklai3QRKsTszWLRtwa81OGN0_868fKKi_tdDhZMwS3lVNZfcB8.webp?r=d2c"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeySA_CStnchHKK4_RoZuxjgLPMUdqjBsv2MgLPTGAV5nhfzg4IiDQXogDo15xpJ2hqOShe5Zt5iAx1G-5gEZWcdu3U.webp?r=1ac"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ7hhNZBtke_ktF4BNhokA4qfNAWkIRC72cEWtG-_Xs05p9ETGu-3iryal54ko947JtQHp2GmlaDQX2orpQmWZbJyxQ.webp?r=bac"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdDXrQRfTPGdqYLNaI33SKZ3iw1XL_rmLK4nnYGEGcID6ExG894MJ6cD-Tol2NK2VQAfQKpO47j4_elEUseFeoaQ2d0.webp?r=05c"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdSjJfC0XsvHcmUHagRAikr5uPHTdZTwNoMeJ8qe9LWYr8r9GhvIybyVLHajRimNh3c4OcRh6_WfdZIabw1QiqJwrR0.webp?r=bdb"
+            />
+          </div>
+          <div class="item-container">
+            <img
+              class="item"
+              src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdhS3RFXzHcWcbKhooUNCEKgsuWqqkVZsB9OOY33a3Jh4pwpIZwQ_1H1oaZwgY9Wikwjn63tKXF6ggqpUXX-4kr09ZQ.webp?r=936"
+            />
+          </div>
+        </div>
+        <br />
+      </div>
+      <div id="footer"class="container-fluid mx-auto">
+          <div class="container row">
+              <div class="social"><img class="social-icon" src="https://www.pinclipart.com/picdir/big/326-3264722_have-you-heard-about-our-parent-group-on.png"></div>
+              <div class="social"><img class="social-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pinclipart.com%2Fpicdir%2Fmiddle%2F366-3665404_instagram-logo-grey-dark-gray-instagram-icon-clipart.png&f=1&nofb=1"></div>
+              <div class="social"><img class="social-icon" src="https://www.pinclipart.com/picdir/middle/355-3551379_retail-store-painting-twitter-twitter-logo-vector-grey.png"></div>
+              <div class="social"><img class="social-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fsocial-icons-grey%2F512%2FYOUTUBE-512.png&f=1&nofb=1"></div>
+          </div>
+          <div class="container row d-flex">
+              <ul class="no-bullets">
+                  <li>Audio and Subtitles</li>
+                  <li>Media Centre</li>
+                  <li>Privacy</li>
+                  <li>Contact Us</li>
+              </ul>
+              <ul class="no-bullets">
+                <li>Audio Description</li>
+                <li>Investor Relations</li>
+                <li>Legal Notices</li>
+              </ul>
+              <ul class="no-bullets">
+                <li>Help</li>
+                <li>Jobs</li>
+                <li>Cookie Preferences</li>
+              </ul>
+              <ul class="no-bullets">
+                <li>Gift Cards</li>
+                <li>Terms of Use</li>
+                <li>Corporate Information</li>
+              </ul>
+          </div>
+
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
