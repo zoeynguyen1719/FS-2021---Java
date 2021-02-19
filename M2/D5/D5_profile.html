@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<!--
+    WELCOME TO THE STRIVE TEAM GENERATOR!
+    The app is pretty straight forward, use Bootstrap to add the following features:
+    - The user can add a list of names
+    - The user can set the number of teams
+    - Every time the user clicks on the "assign" button, a random name is placed in a team and removed from the list
+    - Each team should be inside a "column"
+    - [EXTRA] Create a button to remove an user from a team, putting him back in the main list
+    - [EXTRA] Create a button to reset the state of the app
+-->
+<!doctype html>
+=======
+>>>>>>> 56098d0d2f666806dbecd703325047d3e580dde7
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+<<<<<<< HEAD
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+=======
+>>>>>>> 56098d0d2f666806dbecd703325047d3e580dde7
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix</title>
+  </head>
+  <style>
+       body {
+        background-color: #080808;
+        font-family: "Poppins", sans-serif;
+        color: #f0ebeb;
+        max-width: 768px;
+        margin: 0 auto;
+        font-size: 18px;
+        border-radius: 0px;
+      }  
+      #background-border {
+        background-color: #807171;
+      }      
+</style>
+  <body>
+<<<<<<< HEAD
+    <h><p class="text-left">Netflix</p></h>
+
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+        <div class="row">
+          <div class="col-6 col-md-4">
+              <img class="img-fluid" src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1045/original/strive-20school-20logo.png">
+          </div>
+          
+          <div class="col-6 col-md-8">
+
+            <span style="background-color:gray" class="container-fluid">Strive Student</span>
+            <br>
+            <p class="text-secondary">Language:</p>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">       
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    English
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+              <div>
+                <p class="text-secondary">Maturity Setting:</p>
+                <span style="background-color:rgb(66, 55, 55)" class="container-fluid">ALL MATURITY RATINGS</span>
+            <p>Show titles of all maturity ratings for this profile.</p>
+            <button stye="text-secondary" id="btnGroupDrop1" type="button" class="border border-light btn" aria-expanded="false">
+                EDIT
+              </button>
+            </div>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <div>
+                <p class="text-secondary">Autoplay controls</p>
+                <p>
+                    <img scr="https://www.iconsdb.com/icons/preview/dark-gray/checkmark-xxl.png" style="min-width: auto;">
+                    <p>Autoplay next episode in a series on all devides.</p>
+                    <p>Autoplay previews browsing on all devides.</p>
+                </p>
+            </div>
+        </div>
+
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">  
+<div>
+    <button type="button" class="btn btn-primary btn-lg">SAVE</button>
+<button type="button" class="btn btn-secondary btn-lg">CANCEL</button>
+<button type="button" class="btn btn-secondary btn-lg">DELETE</button>
+</div>
+      </div>
+<script>
+    function backgroundBorder() {
+        var border = document.getElementById("border");
+        for (i=0; i<1; i++) {
+            border[i].style.backgroundColor = "grey";
+        }
+    }
+
+</script>
+
+=======
+    <div id="page-wrapper" class="container-fluid">
+      <div class="container-fluid mx-3">
+        <nav class="navbar navbar-expand-lg my-3">
+          <img
+            id="logo"
+            class="mr-3"
+            src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_logo.png"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+              <li class="nav-item right">
+                <img
+                  id="search-icon"
+                  class="mt-2"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFM0UymE_pOv__JyhctIGLq9XRRmoZx1Rg3Q&usqp=CAU"
+                />
+              </li>
+              <li class="nav-item right">
+                <a class="nav-link" href="#">KIDS</a>
+              </li>
+              <li class="nav-item right">
+                <img
+                  id="notification-icon"
+                  class="mt-2"
+                  src="https://www.materialui.co/materialIcons/social/notifications_white_192x192.png"
+                />
+              </li>
+              <li class="nav-item right">
+                <img
+                  id="profile-icon"
+                  class="mt-1"
+                  src="https://occ-0-173-2581.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZfW1RUr22fiBWaYExj7CxON4XhbCzdXecA3cogZ0L2umPLeF1G2CRjQOqJ4DsYba55_ydC_mMzPhNI-1lGWzjg.png?r=9fe"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container-fluid row ml-4">
+        <h1>TV Shows</h1>
+        <div class="dropdown ml-4 mt-2">
+          <button
+            class="btn btn-dark dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Genres
+          </button>
+          <div class="container">
+            <div class="dropdown-menu row" aria-labelledby="dropdownMenuButton">
+              <ul class="no-bullets col">
+                <li>Action & Adventure</li>
+                <li>Anime</li>
+                <li>British</li>
+                <li>Comedies</li>
+                <li>Crime</li>
+                <li>Docuseries</li>
+                <li>Dramas</li>
+              </ul>
+              <ul class="no-bullets col">
+                <li>Horror</li>
+                <li>International</li>
+                <li>Italian</li>
+                <li>Kids</li>
+                <li>Mysteries</li>
+                <li>Reality & Talk</li>
+                <li>Romance</li>
+              </ul>
+              <ul class="no-bullets col">
+                <li>Sci-Fi & Fantasy</li>
+                <li>Science & Nature</li>
+                <li>Teen</li>
+                <li>Thriller</li>
+                <li>US</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid row ml-4">
+          <h5>Trending</h5>
+          
+
+      </div>
+    </div>
+>>>>>>> 56098d0d2f666806dbecd703325047d3e580dde7
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
